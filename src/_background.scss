@@ -1,0 +1,60 @@
+@mixin background-gradient($startColor: #3C3C3C, $endColor: #999999, $position: top) {
+	background-color: $startColor;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+	background-image: -webkit-linear-gradient(top, $startColor, $endColor);
+	background-image:    -moz-linear-gradient(top, $startColor, $endColor);
+	background-image:     -ms-linear-gradient(top, $startColor, $endColor);
+	background-image:      -o-linear-gradient(top, $startColor, $endColor);
+	background-image:         linear-gradient(top, $startColor, $endColor);
+	filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$startColor}, EndColorStr=#{$endColor});
+}
+
+@mixin rgba($alpha:0.5,$red:0,$green:0,$blue:0){
+	background-color: rgb($red, $green, $blue);
+	background-color: rgba($red, $green, $blue, $alpha);
+	-pie-background: rgba($red, $green, $blue, $alpha);
+    zoom:1;
+}
+
+@mixin default(){
+    background-color: $default-color;
+}
+
+@mixin danger(){
+    background-color: $error;
+}
+
+@mixin info(){
+    background-color: $info;
+}
+
+@mixin success(){
+    background-color: $success;
+}
+
+@mixin warning(){
+    background-color: $warning;
+}
+
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+     -moz-background-size: $background-size;
+       -o-background-size: $background-size;
+          background-size: $background-size;
+}
+
+@mixin background-position($xy: top center){
+    background-position: $xy;
+}
+
+@mixin background-norepeat(){
+    background-repeat: no-repeat;
+}
+
+@mixin background-repeat(){
+    background-repeat: repeat;
+}
+
+@mixin text-shadow($color: #000){
+    text-shadow: 0 1px 0 $color;
+}

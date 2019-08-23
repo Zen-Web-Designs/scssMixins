@@ -1,0 +1,41 @@
+{
+  "name": "@stringarism/scssmixins",
+  "version": "1.0.0",
+  "description": "scssMixins is a collection of SCSS Mixind and functions.",
+  "main": "_all.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stringariSM/scssMixins.git"
+  },
+  "keywords": [
+    "scss",
+    "mixin",
+    "css",
+    "style",
+    "styling",
+    "7ninjas",
+    "bootstrap",
+    "react",
+    "grid",
+    "flex",
+    "mixins",
+    "less",
+    "responsive",
+    "web",
+    "front-end",
+    "css-modules",
+    "sass"
+  ],
+  "author": "Gabriel Stringari de Miranda",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/stringariSM/scssMixins/issues"
+  },
+  "homepage": "https://github.com/stringariSM/scssMixins#readme",
+  "files": [
+    "src/"
+  ]
+}

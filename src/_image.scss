@@ -1,0 +1,26 @@
+@mixin fit($fit: cover, $position: 50% 50%){
+     @include dim(100%,100%);
+     object-fit: $fit;
+     -o-object-fit: $fit;
+     object-position: $position;
+     -o-object-position: $position;
+}
+
+@mixin double-image-effect(){
+    @include relative();
+    @include block();
+    img{
+        @include postl(0,0);
+        @include transition(.4s,opacity);
+    }
+    img:first-child + img{
+        @include opacity(0);
+    }
+    &:hover img:first-child{
+        @include opacity(0);
+    }
+    &:hover img:first-child + img{
+        @include block;
+        @include opacity(1);
+    }
+}

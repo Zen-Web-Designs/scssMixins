@@ -1,0 +1,42 @@
+@mixin triangle-default(){
+    content: '';
+    @include block();
+    @include dim(0,0);
+    -moz-transform: scale(.9999);
+}
+
+@mixin triangle($direction, $size, $color) {
+    @include triangle($direction, $size * 2, $size, $color);
+}
+
+@mixin triangle($direction, $width, $height, $color) {
+
+    @if $direction = top {
+        @include triangle-default();
+        border-left: ($width / 2) solid transparent;
+        border-right: ($width / 2) solid transparent;
+        border-bottom: $height solid $color;
+    }
+
+    @if $direction = bottom {
+        @include triangle-default();
+        border-left: ($width / 2) solid transparent;
+        border-right: ($width / 2) solid transparent;
+        border-top: $height solid $color;
+    }
+
+    @if $direction = left {
+        @include triangle-default();
+        border-top: ($width / 2) solid transparent;
+        border-bottom: ($width / 2) solid transparent;
+        border-right: $height solid $color;
+    }
+
+    @if $direction = right {
+        @include triangle-default();
+        border-top: ($width / 2) solid transparent;
+        border-bottom: ($width / 2) solid transparent;
+        border-left: $height solid $color;
+    }
+
+}

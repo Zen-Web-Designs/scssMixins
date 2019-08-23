@@ -1,0 +1,66 @@
+@mixin relative() {
+	position: relative;
+}
+
+@mixin fixed(){
+    position:fixed;
+}
+
+@mixin absolute(){
+    position:absolute;
+}
+
+@mixin absolute-middle(){
+    position:absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%,-50%));
+}
+
+@mixin absolute-vertical(){
+    position:absolute;
+    top:50%;
+    @include transform(translate(0,-50%));
+}
+
+@mixin absolute-center(){
+    position:absolute;
+    left:50%;
+    @include transform(translate(-50%,0));
+}
+
+@mixin position-tl($top: 0, $left: 0) {
+    top: $top;
+    left: $left;
+}
+
+@mixin position-tr($top: 0, $right: 0) {
+    top: $top;
+    right: $right;
+}
+
+@mixin position-bl($top: 0, $left: 0) {
+    bottom: $top;
+    left: $left;
+}
+
+@mixin position-br($top: 0, $right: 0) {
+    bottom: $top;
+    right: $right;
+}
+
+@mixin fleft(){
+    float:left;
+}
+
+@mixin fright() {
+    float:right;
+}
+
+@mixin clr(){
+    &:after {
+        content:" ";
+        @include block();
+        clear:both;
+    }
+}
