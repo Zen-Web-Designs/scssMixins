@@ -1,6 +1,6 @@
 {
   "name": "@stringarism/scssmixins",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "scssMixins is a collection of SCSS Mixind and functions.",
   "main": "_all.scss",
   "scripts": {
