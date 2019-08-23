@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.3] - 2019-08-23
+:bug: Bug correction:
+
+- Bug on fsize mixin
+
 ## [v0.0.2] - 2019-08-23
 :rocket: New feature:
 
