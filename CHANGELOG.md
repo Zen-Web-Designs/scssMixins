@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.4] - 2019-08-23
+:rocket: New feature:
+
+- Add include bootstrap with custom variables
+
 ## [v0.0.3] - 2019-08-23
 :bug: Bug correction:
 
