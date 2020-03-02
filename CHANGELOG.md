@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [v0.0.5] - 2020-03-02
+:bug: Bug Correction: 
+
+- Correct bug on custom bootstrap
+
 ## [v0.0.4] - 2019-08-23
 :rocket: New feature:
 
